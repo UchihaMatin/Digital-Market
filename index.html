@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Shop</title>
+    <title>Digital Market</title>
+    <link rel="shortcut icon" href="assets/images/logo.svg">
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.rtl.min.css">
 </head>
-<body>
 
-<script src="assets/js/script.js"></script>
+<body>
+<!-- Start Products Section -->
+<section id="products" class="container-fluid size-fix p-3 ps-md-4">
+    <h2 class="section-title">What you're looking for is here!</h2>
+    <div class="row">
+        <div class="section-background">
+            <img src="assets/images/background.svg" alt="background">
+        </div>
+        <p class="helper-title">Select a category to quickly locate your desired product</p>
+        <div class="categories-container">
+            <div id="product-categories">
+                <div class="category-box active">
+                    <div class="category-image">
+                        <img src="assets/images/headphones.png" alt="Headphones">
+                    </div>
+                    <h3 class="category-title">Headphones</h3>
+                </div>
+                <div class="category-box">
+                    <div class="category-image">
+                        <img src="assets/images/Mobile.png" alt="Mobile">
+                    </div>
+                    <h3 class="category-title">Mobile</h3>
+                </div>
+                <div class="category-box">
+                    <div class="category-image">
+                        <img src="assets/images/speaker.png" alt="Speaker">
+                    </div>
+                    <h3 class="category-title">Speaker</h3>
+                </div>
+                <div class="category-box">
+                    <div class="category-image">
+                        <img src="assets/images/Tablet.png" alt="Tablet">
+                    </div>
+                    <h3 class="category-title">Tablet</h3>
+                </div>
+            </div>
+            <a href="#" class="view-all-box">
+                <div class="view-all-text">
+                    <p>View All</p>
+                </div>
+                <div class="view-all-icon">
+                    <img src="assets/images/Arrow.svg" alt="View All">
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</section>
+<!-- End Products Section -->
+
+<!-- script -->
+    <script src="assets/js/bootstarp/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
