@@ -11,56 +11,287 @@
 </head>
 
 <body>
-<!-- Start Products Section -->
-<section id="products" class="container-fluid size-fix p-3 ps-md-4">
-    <h2 class="section-title">What you're looking for is here!</h2>
-    <div class="row">
-        <div class="section-background">
-            <img src="assets/images/background.svg" alt="background">
-        </div>
-        <p class="helper-title">Select a category to quickly locate your desired product</p>
-        <div class="categories-container">
-            <div id="product-categories">
-                <div class="category-box active">
-                    <div class="category-image">
-                        <img src="assets/images/headphones.png" alt="Headphones">
+    <!-- Start Products Section -->
+    <section id="products" class="container-fluid size-fix p-3 ps-md-4">
+        <h2 class="section-title">What you're looking for is here!</h2>
+        <div class="row">
+            <p class="helper-title">Select a category to quickly locate your desired product</p>
+            <div class="categories-container">
+                <div id="product-categories">
+                    <div class="category-box active">
+                        <div class="category-image">
+                            <img src="assets/images/categories/headphones.png" alt="Headphones">
+                        </div>
+                        <h3 class="category-title">Headphones</h3>
                     </div>
-                    <h3 class="category-title">Headphones</h3>
-                </div>
-                <div class="category-box">
-                    <div class="category-image">
-                        <img src="assets/images/Mobile.png" alt="Mobile">
+                    <div class="category-box">
+                        <div class="category-image">
+                            <img src="assets/images/categories/Mobile.png" alt="Mobile">
+                        </div>
+                        <h3 class="category-title">Mobile</h3>
                     </div>
-                    <h3 class="category-title">Mobile</h3>
-                </div>
-                <div class="category-box">
-                    <div class="category-image">
-                        <img src="assets/images/speaker.png" alt="Speaker">
+                    <div class="category-box">
+                        <div class="category-image">
+                            <img src="assets/images/categories/speaker.png" alt="Speaker">
+                        </div>
+                        <h3 class="category-title">Speaker</h3>
                     </div>
-                    <h3 class="category-title">Speaker</h3>
-                </div>
-                <div class="category-box">
-                    <div class="category-image">
-                        <img src="assets/images/Tablet.png" alt="Tablet">
+                    <div class="category-box">
+                        <div class="category-image">
+                            <img src="assets/images/categories/Tablet.png" alt="Tablet">
+                        </div>
+                        <h3 class="category-title">Tablet</h3>
                     </div>
-                    <h3 class="category-title">Tablet</h3>
                 </div>
+                <a href="#" class="view-all-box">
+                    <div class="view-all-text">
+                        <p>View All</p>
+                    </div>
+                    <div class="view-all-icon">
+                        <img src="assets/images/Arrow.svg" alt="View All">
+                    </div>
+                </a>
             </div>
-            <a href="#" class="view-all-box">
-                <div class="view-all-text">
-                    <p>View All</p>
+            <div class="product-slider">
+                <div class="previous">
+                    <img src="assets/images/Previous.svg" alt="Button to go to the previous product">
                 </div>
-                <div class="view-all-icon">
-                    <img src="assets/images/Arrow.svg" alt="View All">
+                <div id="product-section" class="row">
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/1.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">Samsung Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn active">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn active">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/2.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">Anker Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/3.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">JBL Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/4.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">Anker Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/1.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">Samsung Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/2.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">Anker Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/3.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">JBL Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col-4 col-md-3">
+                        <div class="product-box">
+                            <a href="#" class="product-pic">
+                                <img src="assets/images/product/4.png" alt="Product Image">
+                            </a>
+                            <div class="product-information">
+                                <div class="product-name">
+                                    <h2><a href="#">Anker Bluetooth Headphones</a></h2>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-rating">
+                                        <span>4/5</span>
+                                        <img src="assets/images/Star.svg" alt="Rating Star">
+                                    </div>
+                                    <button class="save-btn">
+                                        <img src="assets/images/archive-add.svg" alt="Save Button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <button class="add-to-cart-btn">
+                                    <img src="assets/images/bag.svg" alt="Add to Cart Button">
+                                    Add to Cart
+                                </button>
+                                <div class="product-price-box">$<span class="product-price">99.99</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </a>
-        </div>
-        
-    </div>
-</section>
-<!-- End Products Section -->
+                <div class="next">
+                    <img src="assets/images/next.svg" alt="Button to go to the next product">
+                </div>
 
-<!-- script -->
+            </div>
+        </div>
+    </section>
+    <!-- End Products Section -->
+
+    <!-- script -->
     <script src="assets/js/bootstarp/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
