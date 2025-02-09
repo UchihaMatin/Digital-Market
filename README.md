@@ -15,3 +15,17 @@ This project is an educational and growing endeavor to:
 3. Continuously update and enhance the project as I progress.  
 
 ## Current Structure  
+- Designed with responsiveness for desktops, tablets, and mobiles.  
+- **Product Section**: Developed based on this [design inspiration](https://www.instagram.com/p/DFqFoRdtf5J/?igsh=MTBiZXY5b3VydThi).  
+
+## Current Status  
+This project is currently under development. As of **9 February 2025**, I have received a relatively larger project that requires my focus for the next three months. As a result, the progress of this project might slow down.  
+
+![Desktop View](assets/images/github/Desktop-View.png)
+![Mobile View](assets/images/github/Mobile-View.png)
+
+## Future Plans  
+- Dynamically implement the **Categories Section** and **Product Section**.  
+- Add a **Product Details Page**.  
+- Develop a **Header** and **Footer**.  
+- Enhance UI/UX based on feedback and new inspirations.  

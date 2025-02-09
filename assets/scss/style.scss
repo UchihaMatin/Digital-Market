@@ -46,7 +46,7 @@ $product-font-size-xs:1.2vw;
     height: $height;
 }
 @mixin active-button($scale: 0.95) {
-    &:active{
+    &:active:not(.deactivate){
         transform: scale($scale);
     }
 }
@@ -155,7 +155,9 @@ input:focus {
     width: 100%;
     max-width: 1400px;
 }
-
+.deactivate{
+    opacity: 0.4;
+}
 // Products section
 #products {
     position: relative;
@@ -295,6 +297,7 @@ input:focus {
                 cursor: pointer;
                 user-select: none;
                 @include active-button();
+                transition: 0.4s opacity;
                 img {
                     transition: 0.3s transform;
                     aspect-ratio: 1/1;
@@ -302,32 +305,36 @@ input:focus {
             }
             .previous {
                 margin-right: 20px;
-                &:hover{
+                &:hover:not(.deactivate){
                     img{
                         transform: translateX(-2px) scale(1.2);
                     }
                 }
             }
 
-            #product-section {
+            .product-section {
                 width: 100%;
                 @include flex(start, center, row);
                 flex-wrap: nowrap;
                 overflow: hidden;
                 background: none;
+                align-items: stretch;
                 .product-item{
+                    transition: .4s transform;
+                    transform: translateX(var(--translate-x, 0px));
                     padding-inline: 10px;
 
                     .product-box {
-                        @include flex-center();
+                        @include flex(space-between, center, column);
                         flex-direction: column;
                         border-radius: 20px;
                         background-color: $product-box-color;
                         padding: 10px;
+                        height: 100%;
                         &:hover{
                             .product-pic{
                                 img{
-                                    transform: scale(1.1);
+                                    transform: scale(1.3);
                                 }
                             }
                             .product-info {
@@ -350,7 +357,8 @@ input:focus {
                             img {
                                 width: 60%;
                                 transition: 0.4s transform;
-                                object-fit: cover;
+                                object-fit: contain;
+                                aspect-ratio: 1/1;
                             }
                         }
                         .product-information{
@@ -440,7 +448,7 @@ input:focus {
 
             .next {
                 margin-left: 20px;
-                &:hover{
+                &:hover:not(.deactivate){
                     img{
                         transform: translateX(2px) scale(1.2);
                     }
@@ -486,7 +494,7 @@ input:focus {
                     margin-right: 15px;
                 }
     
-                #product-section {
+                .product-section {
                     .product-item{
                         padding-inline: 5px;
                         .product-box {
@@ -577,7 +585,7 @@ input:focus {
                     @include box(25px);
                     min-width: 25px;
                 }
-                #product-section {
+                .product-section {
                     .product-item{
                         .product-box {
                             border-radius: 16px;
@@ -734,7 +742,7 @@ input:focus {
                         width: 8px;
                     }
                 }
-                #product-section {
+                .product-section {
                     .product-item{
                         padding-inline: 3px;
                         .product-box {
